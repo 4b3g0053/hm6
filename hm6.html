@@ -4,16 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    .word{height: 100px;
-        text-align:center;
-        color: gray;
-    }
-    
-</style>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .box button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #cce5ff;
+            cursor: pointer;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+        }
+        .card {
+            width: 45%;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <div class="word"><h1>台南景點介紹</h1></div><br>
-    
+   <h1>台南景點介紹</h1>
+
+    <div class="box">
+        <button>四草綠色隧道</button>
+        <button>井仔腳瓦盤鹽田</button>
+        <button>赤崁樓</button>
+        <button>台南孔廟</button>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h2>阿里山神木</h2>
+            <img src="alisan.jpg" alt="阿里山神木">
+            <p>日出、雲海、鐵路與神木，是經典的阿里山四大美景！...</p>
+        </div>
+
+        <div class="card">
+            <h2>台南孔廟-全臺首學</h2>
+            <img src="tainan_confucius.jpg" alt="台南孔廟">
+            <p>「全臺首學」是台灣第一座孔廟，建立於明永曆19年...</p>
+        </div>
+    </div>
 </body>
 </html>
